@@ -1,0 +1,9 @@
+.reel{
+    margin-top: 100px;
+}
+
+.reel__image{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,43 @@
+.header-nav{
+    padding: 1rem 0;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    transition: 0.3s;
+}
+
+.nav__wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav__logo-wrapper{
+    flex: 1;
+}
+
+.nav__logo{
+    margin-left: -14px;
+}
+
+.nav__logo:hover{
+    opacity: 0.7;
+}
+
+
+.nav-title{
+    width: 1px;
+    height: 0px;
+    visibility: hidden;
+}
+
+.nav__menu{
+    display: flex;
+    align-items: center;
+    gap: 0 1.5rem;
+}
+
+.nav--light{
+    background-color: #fff;
+}

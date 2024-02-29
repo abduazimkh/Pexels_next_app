@@ -1,0 +1,25 @@
+:root {
+  --container-size: 1200px;
+  --main-accent-color: #05a081;
+  --main-dark-color: #000;
+  --main-light-color: #fff;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.container{
+  max-width: var(--container-size);
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  padding: 0 1rem;
+}

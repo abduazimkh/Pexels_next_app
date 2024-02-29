@@ -1,0 +1,124 @@
+.hero{
+    min-height: 500px;
+    height: 500px;
+    position: relative;
+}
+.hero__image{
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    width: 100% !important;
+    transform: translateX(-50%);
+}
+
+.hero__content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: linear-gradient(0deg, rgba(25,25,25,0.9) 0%, rgba(15,15,15,0.1) 100%);
+}
+
+.hero__content form{
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+}
+
+.hero__content h2{
+    font-size: 30px;
+    max-width: 600px;
+    font-weight: 400;
+}
+
+.hero__search{
+    width: 100%;
+    background-color: #fff;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin: 20px 0 40px 0;
+}
+
+.search__type{
+    height: 100%;
+    background-color: var(--main-accent-color);
+    position: relative;
+    display: flex;
+    padding: 5px 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-right: 10px;
+    text-transform: capitalize;
+    min-width: 100px;
+}
+
+.search__type-menu{
+    display: none;
+    background-color: #fff;
+    padding: 5px;
+    bottom: calc(-100% - 35px);
+    color: #000;
+    position: absolute;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.search-type-wrapper{
+    padding: 30px 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 2;
+    position: absolute;
+    margin-right: 10px;
+}
+
+.search-type-wrapper:hover + .search__type-menu{
+    display: block;
+}
+
+.search__type:hover .search__type-menu{
+    display: block;
+}
+
+.search__type-menu li{
+    cursor: pointer;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.search__type-menu li svg{
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.search__type-menu li:hover{
+    background-color: var(--main-accent-color);
+    color: #fff;
+}
+
+.search__type-menu li:hover svg{
+    color: #fff;
+}
+
+.hero__input{
+    flex: 1;
+    border: none;
+    height: 40px;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+.hero__search svg{
+    color: var(--main-accent-color);
+    font-size: 30px;
+}
